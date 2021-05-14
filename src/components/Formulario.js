@@ -22,11 +22,26 @@ const Formulario = () => {
   // Extraer datos de los inputs
   const { mascota, propietario, fecha, hora, sintomas } = cita;
 
+  // Función que se ejecuta cada vez que el usuario escribe en un input
+  const submitCita = e => {
+    e.preventDefault();
+    
+    // Validar 
+
+    // Asignar ID
+
+    // Crear la cita
+
+    // Reiniciar form
+  }
+
   return (
     <Fragment>
       <h1>Desde Formulario</h1>
 
-      <form>
+      <form
+        onSubmit={submitCita}
+      >
         <label>Nombre Mascota</label>
         <input
           type="text"
