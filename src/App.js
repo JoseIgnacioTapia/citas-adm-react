@@ -14,6 +14,12 @@ function App() {
       cita
     ])
   }
+  
+  // Funcion para eliminar una cita por su id
+  const eliminarCita = id => {
+    const nuevaCita = citas.filter(cita => cita.id !== id);
+    guardarCitas(nuevaCita);
+  };
 
   return (
     <Fragment>
@@ -32,6 +38,7 @@ function App() {
               <Cita
                 key={cita.id}
                 cita={cita}
+                eliminarCita={eliminarCita}
               />
             ))}
 
