@@ -6,7 +6,7 @@ function App() {
 
   // Citas en local storage
   let citasIniciales = JSON.parse(localStorage.getItem('citas'));
-  console.log(citasIniciales);
+
   if (!citasIniciales) {
     citasIniciales = [];
   }
